@@ -1,0 +1,240 @@
+/* CSS Document */
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nanum+Gothic:wght@400;700;800&display=swap');
+/* End Google Fonts Import */
+
+/* Colors:
+    
+    color: #181818;
+
+*/
+
+/* General Styles */
+html
+{
+    font-size: clamp(1rem, 0.5vw, 2rem);
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem;
+    line-height: 1.618em;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+main
+{
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+img
+{
+    max-width: 75%;
+    height: auto;
+}
+
+.black_container
+{
+    background-color: #1f1f1f;
+}
+
+.black_container,
+.white_container
+{
+    padding-top: 10rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 10rem;
+    
+}
+
+.black_img_container,
+.white_img_container,
+.white_text_container
+{
+    flex: 50%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.split_container,
+.three_img_container
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.three_img_container .black_img_container,
+.three_img_container .white_img_container,
+.three_img_container .white_text_container
+{
+    flex: 33%;
+}
+/* End General Styles*/
+
+/* Header and Nav Styles */
+header
+{
+    background-color: #ffffff;
+    /* position: fixed; */
+    width: 100vw;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 5rem 0rem;
+}
+
+.navbar,
+.footer_navbar
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.navbar div,
+.footer_navbar div
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.navbar,
+.navbar ul,
+.navbar li,
+.footer_navbar,
+.footer_navbar ul,
+.footer_navbar li
+{
+    list-style-type: none;
+    padding: 0.20rem;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar a
+{
+    color: #1f1f1f;
+    transition: all ease-in-out 0.3s;
+}
+
+.footer_navbar a
+{
+    color: #FFFFFF;
+    transition: all ease-in-out 0.3s;
+}
+
+.navbar a:hover,
+.footer_navbar a:hover
+{
+    color: #F4AC45;
+}
+
+.navbar a:link,
+.navbar a:active,
+.navbar a:hover,
+.navbar a:visited,
+.footer_navbar a:link,
+.footer_navbar a:active,
+.footer_navbar a:hover,
+.footer_navbar a:visited
+{
+    display: block;
+    overflow: hidden;
+    padding: 0.1rem 0.75rem;
+    text-decoration: none;
+}
+
+.footer_navbar
+{
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+/* End Header and Nav Styles */
+
+/* Text and Character Styles */
+h1
+{
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing: 0.25rem;
+    word-spacing: 0.5rem;
+}
+
+h2
+{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing: 0.25rem;
+    word-spacing: 0.25rem;
+}
+
+.black_header
+{
+    color: #FFFFFF;
+}
+
+.white_header
+{
+    color: #181818;
+}
+
+p
+{
+    letter-spacing: 0.2rem;
+}
+
+p.white_text
+{
+    color: #ffffff;
+}
+
+p.black_text
+{
+    color: #1f1f1f;
+}
+
+figcaption
+{
+    font-size: 0.75rem;
+    font-style: italic;
+    max-width: 75%;
+}
+
+.black_highlight
+{
+    color: #F4AC45;
+}
+
+.white_highlight
+{
+    color: #f4455f;
+    font-weight: bold;
+}
+
+.para_seperators
+{
+
+}
+/* End Text Styles */
