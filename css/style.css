@@ -1,8 +1,4 @@
-/* CSS Document */
-
-/* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nanum+Gothic:wght@400;700;800&display=swap');
-/* End Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 /* Colors:
     
@@ -18,11 +14,12 @@ html
 
 body
 {
+    background-color: #111111;
     margin: 0;
     padding: 0;
-    font-size: 1.25rem;
+    font-size: 0.9rem;
     line-height: 1.618em;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 main
@@ -41,24 +38,21 @@ img
     height: auto;
 }
 
-.black_container
-{
-    background-color: #1f1f1f;
-}
-
-.black_container,
-.white_container
+.top_container
 {
     padding-top: 10rem;
     padding-right: 4rem;
     padding-left: 4rem;
     padding-bottom: 10rem;
-    
+    width: 100%;    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
-.black_img_container,
-.white_img_container,
-.white_text_container
+.img_container
 {
     flex: 50%;
     padding-top: 1rem;
@@ -80,11 +74,11 @@ img
 }
 /* End General Styles*/
 
-/* Header and Nav Styles */
+/* Header and Footer Styles */
 header
 {
-    background-color: #ffffff;
-    /* position: fixed; */
+    background-color: #111111;
+    position: fixed;
     width: 100vw;
     z-index: 1;
     top: 0;
@@ -93,18 +87,30 @@ header
     align-items: center;
     align-content: center;
     justify-content: center;
-    padding: 5rem 0rem;
+    padding: 1.4rem 0rem;
 }
 
-.navbar,
-.footer_navbar
+footer
+{
+    background-color: #111111;
+    width: 100vw;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 0.3rem 0rem;
+}
+
+.navbar
 {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.navbar div,
-.footer_navbar div
+.navbar div
 {
     display: flex;
     flex-flow: row wrap;
@@ -115,10 +121,7 @@ header
 
 .navbar,
 .navbar ul,
-.navbar li,
-.footer_navbar,
-.footer_navbar ul,
-.footer_navbar li
+.navbar li
 {
     list-style-type: none;
     padding: 0.20rem;
@@ -128,18 +131,11 @@ header
 
 .navbar a
 {
-    color: #1f1f1f;
-    transition: all ease-in-out 0.3s;
-}
-
-.footer_navbar a
-{
     color: #FFFFFF;
     transition: all ease-in-out 0.3s;
 }
 
-.navbar a:hover,
-.footer_navbar a:hover
+.navbar a:hover
 {
     color: #F4AC45;
 }
@@ -147,28 +143,14 @@ header
 .navbar a:link,
 .navbar a:active,
 .navbar a:hover,
-.navbar a:visited,
-.footer_navbar a:link,
-.footer_navbar a:active,
-.footer_navbar a:hover,
-.footer_navbar a:visited
+.navbar a:visited
 {
     display: block;
     overflow: hidden;
     padding: 0.1rem 0.75rem;
+    font-size: 0.75rem;
     text-decoration: none;
 }
-
-.footer_navbar
-{
-
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-
 /* End Header and Nav Styles */
 
 /* Text and Character Styles */
