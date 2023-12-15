@@ -34,43 +34,94 @@ main
 
 img
 {
-    max-width: 75%;
+    max-width: 50%;
     height: auto;
+}
+
+.triple_container img
+{
+    max-width: 30%;
+    padding: 0.5rem;
 }
 
 .top_container
 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    width: 100%;    
     padding-top: 10rem;
     padding-right: 4rem;
     padding-left: 4rem;
     padding-bottom: 10rem;
-    width: 100%;    
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    flex: 1 0;
 }
 
 .img_container
 {
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex: 0 0;
 }
 
-.split_container,
-.three_img_container
+.double_container,
+.triple_container,
+.single_container
 {
     display: flex;
-    flex-flow: row;
-    flex: 50%;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex: 0 0;
 }
 
-.split_container img
+.single_container img
 {
-    width: 50%;
+    width: 100%;
     height: auto;
-    padding: 0.2rem;
+    padding: 0.5rem;
+}
+
+.double_container img,
+.double_container div
+{
+    
+    width: 40%;
+    height: auto;
+    padding: 0.5rem;
+}
+
+.triple_container div
+{
+    width: 30%;
+    height: auto;
+    padding: 0.5rem;
+}
+
+.triple_container div h3
+{
+    text-align: center;
+}
+
+@media screen and (max-width: 768px)
+{
+    .single_container img,
+    .double_container img,
+    .triple_container img,
+    .double_container div,
+    .triple_container div 
+    {
+        width: 100%;
+        max-width: unset;
+        margin: 0.2rem 0;
+    }
 }
 
 hr
@@ -170,45 +221,39 @@ footer
 /* Text and Character Styles */
 h1
 {
+    line-height: 2rem;
     font-size: 1.75rem;
     text-transform: uppercase;
     font-family: 'Nanum Gothic', sans-serif;
     letter-spacing: 0.25rem;
     word-spacing: 0.5rem;
+    color: #FFFFFF;
 }
 
 h2
 {
     font-size: 1rem;
-
     font-family: 'Nanum Gothic', sans-serif;
     letter-spacing: 0.25rem;
     word-spacing: 0.25rem;
-}
-
-.black_header
-{
     color: #FFFFFF;
+    text-transform: uppercase;
 }
 
-.white_header
+h3
 {
-    color: #181818;
+    font-size: 0.85rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing: 0.25rem;
+    word-spacing: 0.25rem;
+    color: #FFFFFF;
 }
 
 p
 {
     letter-spacing: 0.2rem;
-}
-
-p.white_text
-{
-    color: #ffffff;
-}
-
-p.black_text
-{
-    color: #1f1f1f;
+    font-size: 0.75rem;
+    color: #FFFFFF
 }
 
 figcaption
@@ -227,10 +272,5 @@ figcaption
 {
     color: #f4455f;
     font-weight: bold;
-}
-
-.unk_date
-{
-    padding-right: 64px;
 }
 /* End Text Styles */
