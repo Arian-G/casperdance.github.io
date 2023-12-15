@@ -88,7 +88,7 @@ main
     text-align: center;
 }
 
-@media screen and (max-width: 900px) 
+@media screen and (max-width: 45em) 
 {
     main 
     {
@@ -245,7 +245,7 @@ footer
     text-decoration: none;
 }
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 45em)
 {
     .navbar a:link,
     .navbar a:active,
