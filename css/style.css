@@ -76,12 +76,19 @@ main
     height: auto;
 }
 
+.row_container img 
+{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
 .row_container h3
 {
     text-align: center;
 }
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 900px) 
 {
     main 
     {
