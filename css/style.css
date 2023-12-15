@@ -118,6 +118,29 @@ img
     }
 }
 
+.footer_container
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex: 0 0;
+}
+
+.footer_container img
+{
+    flex: 0 0 40%;
+    height: auto;
+    padding: 0.5rem; 
+    max-width: 11%;
+}
+
+.footer_container h3
+{
+    flex: 1;
+}
+
 hr
 {
     color: #FFFFFF;
@@ -278,5 +301,5 @@ figcaption
 
 .timed
 {
-    animation: changeColor 3s ease forwards;
+    animation: changeColor 3s ease-in-out forwards;
 }
