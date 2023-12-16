@@ -293,6 +293,11 @@ p
     color: #FFFFFF
 }
 
+sup
+{
+    font-size: 0.5rem;
+}
+
 .accent_highlight
 {
     color: #F4455F;
