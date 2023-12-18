@@ -360,11 +360,11 @@ sup
 
 @keyframes redChangeColor
 {
-    from
+    0%
     {
         color: #FFFFFF;
     }
-    to
+    100%
     {
         color: #F4455F;
     }
@@ -372,11 +372,11 @@ sup
 
 @keyframes yellowChangeColor
 {
-    from
+    0%
     {
         color: #FFFFFF;
     }
-    to
+    100%
     {
         color: #F4AC45;
     }
@@ -384,11 +384,11 @@ sup
 
 @keyframes blueChangeColor
 {
-    from
+    0% 
     {
         color: #FFFFFF;
     }
-    to
+    100% 
     {
         color: #006DAA;
     }
