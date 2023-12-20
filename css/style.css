@@ -69,7 +69,7 @@ img
 {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
     flex: 0 0;
@@ -89,9 +89,9 @@ img
 
 .row_container img
 {
-    width: 100%;
     height: auto;
     max-width: 100%;
+
 }
 
 .row_container h3
@@ -412,4 +412,12 @@ sup
 .tilt
 {
     transform: rotate(30deg);
+}
+
+.third-width{
+    width: 30%
+}
+
+.half-width{
+    width: 50%
 }
