@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
 html
 {
     font-size: clamp(1rem, 0.5vw, 2rem);
@@ -13,6 +19,7 @@ body
     font-size: 0.9rem;
     line-height: 1.618em;
     font-family: 'Nanum Gothic', sans-serif;
+    overflow-x: hidden;
 }
 
 main
@@ -41,16 +48,21 @@ main
     padding: 0;
 }
 
-figure
-{
-    width: 100%;
-    margin: 0;
-}
-
 img
 {
     color: #FFFFFF;
+}  
+
+figure > *
+{
+    width: 100%;
+    padding: 0px;
+    max-width: 100%;
+    height: auto;
+    text-align: left;
+    flex: 1 1 100%;
 }
+
 
 .col_container
 {
@@ -69,7 +81,7 @@ img
 {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     align-content: center;
     flex: 0 0;
@@ -78,28 +90,48 @@ img
     overflow: hidden;
 }
 
-.col_container > *,
-.row_container > *
+.third_width > *
 {
+    width: 30%;
     padding: 5px;
     max-width: 100%;
-    width: 100%;
     height: auto;
+    text-align: left;
+    flex: 1 1 30%;
 }
 
-.row_container img
+.half_width > *
 {
-    height: auto;
+    width: 50%;
+    padding: 5px;
     max-width: 100%;
-
+    height: auto;
+    text-align: left;
+    flex: 1 1 50%;
 }
 
-.row_container h3
+.full_width > *
+{
+    width: 100%;
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+    text-align: left;
+    flex: 1 1 100%;
+}
+
+.third_width h3,
+.half_width h3
 {
     text-align: center;
 }
 
-@media screen and (max-width: 800px) 
+.right_align
+{
+    text-align: right;
+}
+
+@media screen and (max-width: 900px) 
 {
     main 
     {
@@ -111,9 +143,29 @@ img
         flex-flow: wrap;
     }
 
-    .row_container img 
+    .row_container p
     {
-      width: 100%;
+        text-align: left;
+    }
+
+    .row_container h3
+    {
+        line-height: 5rem;
+    }
+
+    .right_align
+    {
+        text-align: left;
+    }
+
+    .full_width > *,
+    .half_width > *,
+    .third_width > *
+    {
+        width: 100%;
+        flex: 0 0 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -177,7 +229,7 @@ footer
 
 .home_container
 {
-    margin-bottom: -10px;
+    margin-bottom: 10px;
 }
 
 .footer_container,
@@ -212,6 +264,7 @@ footer
 .home_container h1
 {
     flex: 1;
+    padding-top: 0;
 }
 
 .navbar
@@ -297,6 +350,7 @@ h1
     letter-spacing: 0.25rem;
     word-spacing: 0.5rem;
     color: #FFFFFF;
+    padding: 1rem 0 0;
 }
 
 h2
@@ -307,6 +361,7 @@ h2
     word-spacing: 0.25rem;
     color: #FFFFFF;
     text-transform: uppercase;
+    padding: 1rem 0 0;
 }
 
 h3
@@ -316,6 +371,7 @@ h3
     letter-spacing: 0.25rem;
     word-spacing: 0.25rem;
     color: #FFFFFF;
+    padding: 1rem 0 0;
 }
 
 p
@@ -412,12 +468,4 @@ sup
 .tilt
 {
     transform: rotate(30deg);
-}
-
-.third-width{
-    width: 30%
-}
-
-.half-width{
-    width: 50%
 }
