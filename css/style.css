@@ -131,6 +131,11 @@ figure > *
     text-align: right;
 }
 
+.center_align
+{
+    text-align: justify;
+}
+
 @media screen and (max-width: 900px) 
 {
     main 
@@ -153,11 +158,6 @@ figure > *
         line-height: 5rem;
     }
 
-    .right_align
-    {
-        text-align: left;
-    }
-
     .full_width > *,
     .half_width > *,
     .third_width > *
@@ -167,6 +167,14 @@ figure > *
         padding-left: 0;
         padding-right: 0;
     }
+}
+
+@media screen and (min-width: 2000px) 
+{
+    .top_container
+    {
+        max-width: 60%;
+    }    
 }
 
 hr
@@ -225,6 +233,7 @@ footer
     align-content: center;
     justify-content: center;
     padding: 0.3rem 0rem;
+    margin-bottom: 20px;
 }
 
 .home_container
