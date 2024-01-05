@@ -424,6 +424,8 @@ sup
 .tertiary_highlight
 {
     color: #F4AC45;
+    /* color: #F4455F; */
+    font-weight: bold;
 }
 
 @keyframes redChangeColor
