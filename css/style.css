@@ -261,15 +261,20 @@ footer
 {
     flex: 0 0 auto;
     height: auto;
-    padding: 0.5rem; 
+    /* padding: 0.5rem; */ 
     max-width: 20px;
+}
+
+.footer_container h3
+{
+    padding-bottom: 0;
 }
 
 .home_container img
 {
     flex: 0 0 auto;
     height: auto;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     min-width: 40px;
     max-width: 40px;
 }
@@ -502,4 +507,12 @@ sup
 .tilt
 {
     transform: rotate(30deg);
+}
+
+@media screen and (max-width: 900px) 
+{
+    .tilt
+    {
+        transform: rotate(0deg);
+    }
 }
