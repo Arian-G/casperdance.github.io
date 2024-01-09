@@ -507,6 +507,7 @@ sup
 .tilt
 {
     transform: rotate(30deg);
+    visibility: hidden;
 }
 
 @media screen and (max-width: 900px) 
