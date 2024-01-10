@@ -408,6 +408,16 @@ p, .list ul, .list li
     list-style-position: inside;
 }
 
+.indented_list
+{
+    padding-left: 38px;
+}
+
+.indented_list li
+{
+    list-style-type: none;
+}
+
 pre
 {
     letter-spacing: 0.2rem;
